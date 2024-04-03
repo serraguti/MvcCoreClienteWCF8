@@ -1,0 +1,17 @@
+{
+  "ExtendedData": {
+    "inputs": [
+      //"https://wcfhostescenaspelispaco2024.azurewebsites.net/ServiceEscenasPelis.svc"
+      "http://localhost:51957/ServiceEscenasPelis.svc"
+    ],
+    "collectionTypes": [
+      "System.Array",
+      "System.Collections.Generic.Dictionary`2"
+    ],
+    "namespaceMappings": [
+      "*, ServiceReferenceEscenas"
+    ],
+    "targetFramework": "net8.0",
+    "typeReuseMode": "All"
+  }
+}

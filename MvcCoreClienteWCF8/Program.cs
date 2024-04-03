@@ -2,9 +2,19 @@ using MvcCoreClienteWCF8.Helpers;
 using MvcCoreClienteWCF8.Repositories;
 using MvcCoreClienteWCF8.Services;
 using ServiceReferenceCatastro;
+using ServiceReferenceCoches;
+using ServiceReferenceEscenas;
+using ServiceReferenceMetodosVarios;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddTransient<EscenasContractClient>();
+builder.Services.AddTransient<ServiceEscenas>();
 
+builder.Services.AddTransient<CochesContractClient>();
+builder.Services.AddTransient<ServiceCoches>();
+
+builder.Services.AddTransient<MetodosVariosContractClient>();
+builder.Services.AddTransient<ServiceMetodosVarios>();
 // Add services to the container.
 builder.Services.AddTransient
     <CallejerodelasedeelectrónicadelcatastroSoapClient>();
